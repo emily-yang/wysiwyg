@@ -7,8 +7,6 @@ export default function handleEditorInput(event) {
         // handle the styles
         const { value, name: styleName } = event.target;
         const unit = event.target.dataset.unit || '';
-        console.log(event.target.name);
-        console.log(unit);
         textElement.style[styleName] = `${value}${unit}`;
 
     }
