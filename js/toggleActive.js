@@ -8,3 +8,4 @@ export default function toggleActive(event) {
     // toggle the class active
     editableText.classList.toggle('active');
 }
+
