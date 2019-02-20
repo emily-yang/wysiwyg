@@ -13,7 +13,7 @@ wysiwyg-editable-text {
     border-color: rgb(218, 220, 224);
   }
 
-  wysiwyg-editable-text.active {
+  wysiwyg-editable-text[active] {
     margin-bottom: 1rem;
     background-color: #f4f4f4;
     border-color: rgba(0, 0, 0, 0.5);
@@ -37,7 +37,7 @@ wysiwyg-editable-text {
 wysiwyg-editable-text:hover .edit-button {
     opacity: 1;
   }
-wysiwyg-editable-text.active .edit-button {
+wysiwyg-editable-text[active] .edit-button {
     display: none;
   }
 
@@ -46,6 +46,6 @@ wysiwyg-editable-text.active .edit-button {
     opacity: 1
   }
 
-wysiwyg-editable-text.active .save-button {
+wysiwyg-editable-text[active] .save-button {
     display: inline-block
   }

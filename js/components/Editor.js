@@ -18,7 +18,7 @@ export default class Editor extends HTMLElement {
             <div class="form-group">
               <label>
                 Font size:
-                <input type="number"  name="font-size" data-unit="px" value="32" />
+                <input type="number"  name="font-size" data-unit="px" value="16" />
                 px
               </label>
             </div>

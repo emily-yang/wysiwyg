@@ -5,6 +5,8 @@
 @import "add-button.css";
 @import './components/editor.css';
 @import './components/editable-text.css';
+@import './components/editable-heading.css';
+@import './components/timestamp.css';
 
 html {
   background-color: #151019;
