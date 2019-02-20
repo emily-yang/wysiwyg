@@ -34,7 +34,6 @@ export default class EditableHeading extends EditableText {
   }
 
   attributeChangedCallback(attrName, oldVal, newVal) {
-    console.log(attrName, oldVal, newVal);
     this.render();
   }
 }

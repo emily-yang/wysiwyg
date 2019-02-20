@@ -18,12 +18,11 @@ export default class TimeStamp extends HTMLElement{
 
   render() {
     this.innerHTML = `
-      <p class='timestamp'>Last Modified: ${this.timestamp}</p>
+      <p class='timestamp'>Last modified: ${this.timestamp}</p>
     `;
   }
 
   attributeChangedCallback(attrName, oldVal, newVal) {
-    console.log(attrName, oldVal, newVal);
     this.render();
   }
 }

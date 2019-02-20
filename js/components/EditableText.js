@@ -36,10 +36,8 @@ export default class EditableText extends HTMLElement {
 
         // Select edit buttons and add click event listener
         this.querySelectorAll('.edit-button, .save-button').forEach(button => button.addEventListener('click', this.toggleActive));
-
         this.querySelector('wysiwyg-editor').addEventListener('input', this.handleInput);
         this.querySelector('.save-button').addEventListener('click', this.updateDate);
-
     }
 
     toggleActive = () => {
@@ -65,9 +63,6 @@ export default class EditableText extends HTMLElement {
 
     updateDate = () => {
         const date = new Date().toString().split('GMT')[0];
-        console.log(this);
-        this.querySelector('wysiwyg-timestamp').setAttribute('timestamp', date);
-
+        this.querySelector('wysiwyg-timestamp').timestamp = date;
     }
-
 }
